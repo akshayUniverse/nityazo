@@ -1,48 +1,76 @@
 import { StyleSheet } from "react-native";
 
-import { Colors } from "../constants/colors";
-
 export const BottomTabStyles = StyleSheet.create({
   container: {
     position: "absolute",
-    bottom: 0,
+
     left: 0,
+
     right: 0,
 
+    bottom: 0,
+
+    height: 96,
+
     flexDirection: "row",
-    justifyContent: "space-around",
-    alignItems: "center",
 
-    backgroundColor: Colors.white,
+    paddingTop: 8,
 
-    paddingVertical: 10,
+    borderTopWidth: 2,
 
-    borderTopWidth: 1,
-    borderTopColor: "#ECECEC",
+    borderTopColor: "#EBEBEB",
+
+    borderBottomLeftRadius: 20,
+
+    borderBottomRightRadius: 20,
+
+    shadowColor: "#333",
+
+    shadowOffset: {
+      width: 0,
+      height: -5,
+    },
+
+    shadowOpacity: 0.1,
+
+    shadowRadius: 20,
+
+    elevation: 15,
   },
 
   item: {
-    alignItems: "center",
+    flex: 1,
+
+    height: 88,
+
     justifyContent: "center",
 
-    width: 62,
-    height: 48,
-
-    borderRadius: 14,
+    alignItems: "center",
   },
 
   activeItem: {
-    backgroundColor: "#FFD7C8",
+    backgroundColor: "#FFD7C9",
+
+    borderTopWidth: 8,
+
+    borderTopColor: "#FF7F50",
+
+    borderTopLeftRadius: 20,
+
+    borderTopRightRadius: 20,
   },
 
   label: {
-    marginTop: 4,
-    fontSize: 11,
+    marginTop: 6,
+
+    fontSize: 12,
+
     color: "#666",
   },
 
   activeLabel: {
-    color: Colors.primary,
+    color: "#222",
+
     fontWeight: "600",
   },
 });

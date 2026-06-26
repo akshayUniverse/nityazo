@@ -9,11 +9,22 @@ import { BottomTabStyles } from "../styles/BottomTab.styles";
 
 type Props = {
   active?: "home" | "categories" | "orders" | "profile";
+  backgroundColor?: string;
 };
 
-export default function BottomTab({ active = "categories" }: Props) {
+export default function BottomTab({
+  active,
+  backgroundColor = "#FAFAFA",
+}: Props) {
   return (
-    <View style={BottomTabStyles.container}>
+    <View
+      style={[
+        BottomTabStyles.container,
+        {
+          backgroundColor,
+        },
+      ]}
+    >
       <TabItem title="Home" Icon={HomeIcon} active={active === "home"} />
 
       <TabItem

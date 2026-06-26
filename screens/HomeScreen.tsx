@@ -57,7 +57,7 @@ export default function HomeScreen() {
         <HelpCard />
       </ScrollView>
 
-      <BottomTab />
+      <BottomTab active="categories" backgroundColor="#EBEBEB" />
     </SafeAreaView>
   );
 }

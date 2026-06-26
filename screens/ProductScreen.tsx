@@ -56,7 +56,7 @@ export default function ProductScreen({ id }: Props) {
         <Button title="Add to Cart" variant="primary" />
       </ScrollView>
 
-      <BottomTab active="categories" />
+      <BottomTab backgroundColor="#FAFAFA" />
     </SafeAreaView>
   );
 }
