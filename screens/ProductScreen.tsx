@@ -53,7 +53,11 @@ export default function ProductScreen({ id }: Props) {
           </Text>
         </Pressable>
 
-        <Button title="Add to Cart" variant="primary" />
+        <Button
+          title="Add to Cart"
+          variant="primary"
+          textStyle={{ color: "#FAFAFA" }}
+        />
       </ScrollView>
 
       <BottomTab backgroundColor="#FAFAFA" />
