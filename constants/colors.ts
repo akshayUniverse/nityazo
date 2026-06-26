@@ -13,7 +13,7 @@ export const Colors = {
 
   card: "#F8F8F8",
 
-  success: "#DDF5E6",
+  success: "#CDEBD7",
 
   white: "#FFFFFF",
 

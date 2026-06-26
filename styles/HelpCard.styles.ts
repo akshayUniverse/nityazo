@@ -8,8 +8,10 @@ export const HelpCardStyles = StyleSheet.create({
     marginHorizontal: Spacing.lg,
     marginTop: Spacing.sm,
     padding: Spacing.lg,
-    borderRadius: 16,
-    backgroundColor: "#F6F6F6",
+    borderRadius: 25,
+    backgroundColor: "#F0F0F0",
+    borderWidth: 0.5,
+    borderColor: "#C0C0C0",
     alignItems: "center",
   },
 

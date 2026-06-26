@@ -1,4 +1,5 @@
 import { Text, View } from "react-native";
+import ContactIcon from "../assets/logos/contact.svg";
 import { HelpCardStyles } from "../styles/HelpCard.styles";
 import Button from "./Button";
 
@@ -15,7 +16,11 @@ export default function HelpCard() {
         with any questions or concerns.
       </Text>
 
-      <Button title="Contact Us" />
+      <Button
+        title="Contact Us"
+        variant="secondary"
+        icon={<ContactIcon width={18} height={18} />}
+      />
     </View>
   );
 }

@@ -1,19 +1,41 @@
-import { Pressable, Text } from "react-native";
+import { ReactNode } from "react";
+import { Pressable, Text, View } from "react-native";
+
 import { Colors } from "../constants/colors";
 import { Typography } from "../constants/typography";
 
-export default function Button({ title }: { title: string }) {
+type Props = {
+  title: string;
+  onPress?: () => void;
+  icon?: ReactNode;
+  variant?: "primary" | "secondary";
+};
+
+export default function Button({
+  title,
+  onPress,
+  icon,
+  variant = "primary",
+}: Props) {
+  const backgroundColor =
+    variant === "primary" ? Colors.primary : Colors.success;
+
   return (
     <Pressable
+      onPress={onPress}
       style={{
         marginTop: 18,
         width: "100%",
-        backgroundColor: "#DDF5E6",
-        paddingVertical: 14,
+        height: 54,
         borderRadius: 10,
+        backgroundColor,
+        flexDirection: "row",
+        justifyContent: "center",
         alignItems: "center",
       }}
     >
+      {icon && <View style={{ marginRight: 8 }}>{icon}</View>}
+
       <Text
         style={{
           ...Typography.button,

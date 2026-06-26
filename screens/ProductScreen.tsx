@@ -53,7 +53,7 @@ export default function ProductScreen({ id }: Props) {
           </Text>
         </Pressable>
 
-        <Button title="Add to Cart" />
+        <Button title="Add to Cart" variant="primary" />
       </ScrollView>
 
       <BottomTab active="categories" />
