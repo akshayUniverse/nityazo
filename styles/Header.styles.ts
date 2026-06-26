@@ -7,12 +7,14 @@ import { Typography } from "../constants/typography";
 export const HeaderStyles = StyleSheet.create({
   container: {
     height: 72,
-    backgroundColor: "#FFF3B0",
+    backgroundColor: Colors.headerBackground,
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
 
-    paddingHorizontal: Spacing.lg,
+    paddingHorizontal: Spacing.xxl,
+    borderBottomLeftRadius: 25,
+    borderBottomRightRadius: 25,
   },
 
   backButton: {

@@ -3,14 +3,14 @@ import { StyleSheet } from "react-native";
 export const CategoryCardStyles = StyleSheet.create({
   container: {
     width: "47%",
-    marginBottom: 18,
+    marginBottom: 20,
     alignItems: "center",
   },
 
   image: {
     width: "100%",
     height: 105,
-    borderRadius: 14,
+    borderRadius: 20,
   },
 
   title: {
