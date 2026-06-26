@@ -4,7 +4,7 @@
     "slug": "nityazo-ui",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/groceries.webp",
     "scheme": "nityazoui",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,

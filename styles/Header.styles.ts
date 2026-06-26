@@ -6,50 +6,42 @@ import { Typography } from "../constants/typography";
 
 export const HeaderStyles = StyleSheet.create({
   container: {
+    height: 72,
+    backgroundColor: "#FFF3B0",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+
     paddingHorizontal: Spacing.lg,
-    paddingTop: Spacing.lg,
-    paddingBottom: Spacing.md,
-  },
-
-  title: {
-    ...Typography.h1,
-    color: Colors.text,
-  },
-
-  subtitle: {
-    ...Typography.body,
-    color: Colors.secondaryText,
-    marginTop: 4,
   },
 
   backButton: {
     width: 40,
     height: 40,
 
-    borderRadius: 20,
-
     justifyContent: "center",
     alignItems: "center",
-
-    backgroundColor: Colors.white,
-  },
-
-  centerTitle: {
-    position: "absolute",
-
-    left: 0,
-    right: 0,
-    top: 26,
-
-    textAlign: "center",
-
-    ...Typography.h3,
-
-    color: Colors.text,
   },
 
   placeholder: {
     width: 40,
-    height: 40,
+  },
+
+  center: {
+    flex: 1,
+    alignItems: "center",
+  },
+
+  title: {
+    ...Typography.h3,
+    color: Colors.text,
+  },
+
+  subtitle: {
+    marginTop: 2,
+
+    ...Typography.caption,
+
+    color: Colors.secondaryText,
   },
 });

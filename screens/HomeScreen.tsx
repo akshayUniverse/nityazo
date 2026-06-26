@@ -32,7 +32,7 @@ const categories = [
 export default function HomeScreen() {
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: "#fff" }}>
-      <Header title="Categories" />
+      <Header title="Categories" showBackButton={false} />
 
       <ScrollView
         showsVerticalScrollIndicator={false}
