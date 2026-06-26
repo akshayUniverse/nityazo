@@ -5,9 +5,8 @@ import { Typography } from "../constants/typography";
 
 export const HelpCardStyles = StyleSheet.create({
   container: {
-    marginHorizontal: Spacing.lg,
     marginTop: Spacing.sm,
-    padding: Spacing.lg,
+    padding: Spacing.xl,
     borderRadius: 25,
     backgroundColor: "#F0F0F0",
     borderWidth: 0.5,
@@ -18,7 +17,7 @@ export const HelpCardStyles = StyleSheet.create({
   title: {
     ...Typography.h3,
     color: Colors.text,
-    marginBottom: Spacing.sm,
+    marginBottom: Spacing.lg,
   },
 
   subtitle: {
